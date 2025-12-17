@@ -1,0 +1,136 @@
+.iloro-history {
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #0f172a;
+  line-height: 1.6;
+  background: linear-gradient(180deg, #fbfbfd 0%, #ffffff 100%);
+}
+
+/* Banner */
+.ih-banner {
+  background: linear-gradient(135deg, #0f172a 0%, #0b4f6c 60%);
+  color: white;
+  padding: 4.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ih-banner-overlay {
+  max-width: 1100px;
+  text-align: center;
+}
+
+.ih-banner h1 {
+  margin: 0 0 0.25rem 0;
+  font-size: clamp(1.6rem, 3.6vw, 2.4rem);
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+.ih-banner .subtitle {
+  margin: 0;
+  font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+  opacity: 0.95;
+}
+
+/* Container */
+.ih-container {
+  max-width: 1100px;
+  margin: -2.5rem auto 4rem auto; /* pull content up towards banner */
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+}
+
+.ih-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(12, 18, 30, 0.06);
+  padding: 1.35rem 1.2rem;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.ih-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(12, 18, 30, 0.09);
+}
+
+.ih-intro h2,
+.ih-reason h2,
+.ih-inauguration h2,
+.ih-attendees h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+  color: #07122f;
+}
+
+.ih-attendees .attendee-grid {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.6rem;
+}
+
+.attendee {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.65rem;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  border: 1px solid rgba(11, 79, 108, 0.06);
+}
+
+.attendee-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.attendee-compound {
+  font-size: 0.82rem;
+  color: #365a71;
+}
+
+.signature {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+/* Quote/aside styles */
+.ih-quote {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.4rem;
+  border: 1px solid rgba(11, 79, 108, 0.06);
+}
+
+.ih-quote h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Responsive rules */
+@media (max-width: 880px) {
+  .ih-container {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+
+  .ih-banner {
+    padding: 3.2rem 1rem;
+  }
+}
+
+/* Small visual polish */
+.ih-card p { margin: 0.6rem 0 0 0; }
+
+/* Accessibility helpers */
+.ih-banner, .ih-card { -webkit-font-smoothing: antialiased; }
