@@ -32,6 +32,7 @@ const Navbar = () => {
           <li style={styles.navItem}><Link style={styles.navItem} to="/ipu_history">IPU History</Link></li>
           <li style={styles.navItem}><Link style={styles.navItem} to="/ipu_members">IPU Members</Link></li>
            <li style={styles.navItem}><Link style={styles.navItem} to="/constitution">IPU Constitution</Link></li>
+           <li style={styles.navItem}><Link style={styles.navItem} to="/magazines">magazine</Link></li>
           <li style={styles.navItem}><Link style={styles.navItem} to="/gallery">Gallery</Link></li>
 
         </ul>
@@ -74,6 +75,10 @@ const Navbar = () => {
             <li style={styles.mobileItem}>
               <Link style={styles.mobileItem} to="/constitution" onClick={() => setMenuOpen(false)}>IPU Constitution</Link>
             </li>
+             <li style={styles.mobileItem}>
+              <Link style={styles.mobileItem} to="/magazines" onClick={() => setMenuOpen(false)}>Magazine</Link>
+            </li>
+
 
 
             <li style={styles.mobileItem}>
