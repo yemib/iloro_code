@@ -16,6 +16,9 @@ import IloroHistoryPage from './newHistory.js';
 import IpuHistory from './IpuHistory.js';
 
 import ConstitutionPage from './blogs/constitution.js';
+import PDFViewer from './view_pdf.js';
+import PdfGallery from './MagazineGallery.js';
+import MagazineGallery from './MagazineGallery.js';
 
 
 
@@ -101,6 +104,8 @@ function App() {
               <Route path='/ipu_members' element={<AssociationMembers />} />
               <Route path='/ipu_history' element={<IpuHistory />} />
               <Route  path='/constitution'   element={<ConstitutionPage/>} />
+              <Route path='/magazines'   element={<MagazineGallery/>} />
+              <Route  path='/magazine/:file/:name'  element={<PDFViewer/>} />
 
 
 

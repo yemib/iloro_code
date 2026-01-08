@@ -1,0 +1,45 @@
+.pdf-gallery-container {
+  padding: 30px;
+}
+
+.gallery-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pdf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.pdf-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.pdf-card:hover {
+  transform: translateY(-6px);
+}
+
+.pdf-preview {
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.pdf-preview embed {
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* prevents scroll inside thumbnail */
+}
+
+.pdf-info {
+  text-align: center;
+  margin-top: 12px;
+  font-weight: 600;
+}
